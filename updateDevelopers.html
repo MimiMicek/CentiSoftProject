@@ -17,27 +17,36 @@
             <div class="btn-group btn-group-lg" role="group">
                 <button><a href="customers.html" class="btn btn-danger btn-lg">Customers</a></button>
                 <button><a href="projects.html" class="btn btn-danger btn-lg">Projects</a></button>
-                <button><a href="developers.html" class="btn btn-danger btn-lg">Developers</a></button>
+                <button><a href="developers.html" class="btn btn-danger btn-lg">Developers</a></button>  
             </div>    
-            <!-- <ul>
-                <li><a href="customers.html">Customers</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="developers.html">Developers</a></li>
-            </ul> -->
         </nav>
-        <main>
-            <h1><a href="index.html">CentiSoft Time Registration</a></h1>
-            <p>This is the Developers page.</p>
-            <ul>
-                <li><a href="createDevelopers.html">Create a new developer</a></li>
-                <li><a href="displayDevelopers.html">View a list of developers</a></li>
-                <li><a href="updateDevelopers.html">Update developer info</a></li>
-                <li><a href="deleteDevelopers.html">Delete an existing developer</a></li>
-            </ul>
-            
-            <p id="demo"></p>
-           
-        </main>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6"></div>
+
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th id="table-name" colspan="4">List of Developers</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                        <th id="id" class="text-center">Id</td>
+                        <th id="name" class="text-center">Name</td>
+                        <th id="email" class="text-center">Email</td>
+                    <tr>
+                        <td  class="text-right">
+                            <p id="demo0"></p>
+                        </td>
+                        <td  class="text-right">
+                            <p id="demo"></p>
+                        </td>
+                        <td class="text-right">
+                            <p id="demo2"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <footer>
             <table>
                 <tr>
@@ -63,7 +72,38 @@
             </table>
         </footer>
         <script src="jquery-3.3.1.js"></script>
+        <!-- <script src="myScript.js"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+        var siteUrl = 'http://dm.sof60.dk:84/api/Developer';
+
+function updateListItem() {
+
+    var clientContext = new SP.ClientContext(siteUrl);
+    var oList = clientContext.get_web().get_lists(ch);
+
+    this.oListItem = oList.getItemById(5);
+
+    oListItem.set_item('Name');
+
+    oListItem.update();
+
+    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+}
+
+function onQuerySucceeded() {
+
+    alert('Item updated!');
+}
+
+function onQueryFailed(sender, args) {
+
+    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
+        
+        
+        </script>
+    
     </body>
 </html>

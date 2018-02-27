@@ -83,8 +83,10 @@ footer table th,td {
     font-size: 30px;
 }
 
-#id, #name, #email, #tasks{
+#id, #name, #email, #address, #address2, #zip, #city, #country, #phone{
     color: black;
     font-size: 20px;
     width: 10px;
 }
+
+
