@@ -1,85 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Developers - CentiSoft Website</title>
-        <link rel="shortcut icon" href="img/chocolate.png"/>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="img/company-logo.png"></a>
-        </header>
-        <nav>
-            <div class="btn-group btn-group-lg" role="group">
-                <button><a href="customers.html" class="btn btn-danger btn-lg">Customers</a></button>
-                <button><a href="projects.html" class="btn btn-danger btn-lg">Projects</a></button>
-                <button><a href="developers.html" class="btn btn-danger btn-lg">Developers</a></button>  
-            </div>    
-               
-            <!-- <ul>
+
+<head>
+    <title>Developers - CentiSoft Website</title>
+    <link rel="shortcut icon" href="img/chocolate.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/company-logo.png">
+        </a>
+    </header>
+    <nav>
+        <div class="btn-group btn-group-lg" role="group">
+            <button>
+                <a href="customers.html" class="btn btn-danger btn-lg">Customers</a>
+            </button>
+            <button>
+                <a href="projects.html" class="btn btn-danger btn-lg">Projects</a>
+            </button>
+            <button>
+                <a href="developers.html" class="btn btn-danger btn-lg">Developers</a>
+            </button>
+        </div>
+
+        <!-- <ul>
                 <li><a href="customers.html">Customers</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="developers.html">Developers</a></li>
             </ul> -->
-        </nav>
+    </nav>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-6"></div>
+
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th id="table-name" colspan="4">List of Developers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th id="id" class="text-center">Id</td>
+                    <th id="name" class="text-center">Name</td>
+                        <th id="email" class="text-center">Email</td>
+                            <tr id="developerList">
+                                <td class="text-right">
+                                    <p id="demo0"></p>
+                                </td>
+                                <td class="text-right">
+                                    <p id="demo"></p>
+                                </td>
+                                <td class="text-right">
+                                    <p id="demo2"></p>
+                                </td>
+                            </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
         <div class="row">
             <div class="col-md-6 col-md-offset-6"></div>
-
-            <table class="table table-bordered table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th id="table-name" colspan="4">List of Developers</th> 
-                    </tr>
-                </thead>
+            <table>
                 <tbody>
-                        <th id="id" class="text-center">Id</td>
-                        <th id="name" class="text-center">Name</td>
-                        <th id="email" class="text-center">Email</td>
-                    <tr id="developerList">
-                        <td  class="text-right">
-                            <p id="demo0"></p>
-                        </td>
-                        <td  class="text-right">
-                            <p id="demo"></p>
-                        </td>
-                        <td class="text-right">
-                            <p id="demo2"></p>
-                        </td>
-                    </tr>
+                    <th id="id" class="text-left">Created by</td>
+                        <th id="name" class="text-left">Contact us</td>
+                            <th id="email" class="text-left">Follow us</td>
+                                <tr>
+                                    <td class="text-left">
+                                        <p>© 2018 CentiSoft webdesign</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p>Email: info@centisoft.com</p>
+                                        <p>Phone: +45 11 22 334</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="https://facebook.com">Facebook</a>
+                                        <br>
+                                        <a href="https://twitter.com">Twitter</a>
+                                        <br>
+                                        <a href="https://plus.google.com">Google Plus</a>
+                                    </td>
+                                </tr>
                 </tbody>
             </table>
         </div>
-        <footer>
-            <table>
-                <tr>
-                    <th>Created by</th>
-                    <th>Contact us</th>
-                    <th>Follow us on</th>
-                </tr>
-                <tr>
-                    <td>Maddie</td>
-                    <td>Our email</td>
-                    <td>Facebook</td>
-                </tr>
-                <tr>
-                    <td>2018</td>
-                    <td>Our phone number</td>
-                    <td>Twitter</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Google plus</td>
-                </tr>
-            </table>
-        </footer>
-        <script src="jquery-3.3.1.js"></script>
-        <script src="myScript.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+    </footer>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="myScript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

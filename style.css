@@ -9,9 +9,6 @@ body {
     padding: 25px 100px;
 }
 
-header {
-}
-
 header img {
     width: 250px;
 }
@@ -70,17 +67,19 @@ footer {
     margin: 10px 0px;
 }
 
-footer table {
+/* footer table {
     text-align: left;
 }
 
 footer table th,td {
     padding: 3px 20px;
-}
+} */
+
+
 
 #table-name{
     color: red;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #id, #name, #email, #address, #address2, #zip, #city, #country, #phone{
@@ -89,4 +88,8 @@ footer table th,td {
     width: 10px;
 }
 
+#table2{
+    color: black;
+    text-justify: auto;
+}
 

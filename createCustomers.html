@@ -1,121 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Developers - CentiSoft Website</title>
-        <link rel="shortcut icon" href="img/chocolate.png"/>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img src="img/company-logo.png"></a>
-        </header>
-        <nav>
-            <div class="btn-group btn-group-lg" role="group">
-                <button><a href="customers.html" class="btn btn-danger btn-lg">Customers</a></button>
-                <button><a href="projects.html" class="btn btn-danger btn-lg">Projects</a></button>
-                <button><a href="developers.html" class="btn btn-danger btn-lg">Developers</a></button>
-            </div>    
-        </nav>
-        <main>
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Full Name</span>
-                <input id="txtName" type="text" class="form-control" placeholder="Customer's full name">
-            </div><br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Address</span>
-                <input id="txtAddress" type="text" class="form-control" placeholder="Customer's Address">
-            </div><br>
+<head>
+    <title>Developers - CentiSoft Website</title>
+    <link rel="shortcut icon" href="img/chocolate.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+</head>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Address 2</span>
-                <input id="txtAddress2" type="text" class="form-control" placeholder="Customer's Address2">
-            </div><br>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/company-logo.png">
+        </a>
+    </header>
+    <nav>
+        <div class="btn-group btn-group-lg" role="group">
+            <button>
+                <a href="customers.html" class="btn btn-danger btn-lg">Customers</a>
+            </button>
+            <button>
+                <a href="projects.html" class="btn btn-danger btn-lg">Projects</a>
+            </button>
+            <button>
+                <a href="developers.html" class="btn btn-danger btn-lg">Developers</a>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Full Name</span>
+            <input id="txtName" type="text" class="form-control" placeholder="Customer's full name">
+        </div>
+        <br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Zip</span>
-                <input id="txtZip" type="text" class="form-control" placeholder="Customer's Zip">
-            </div><br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Address</span>
+            <input id="txtAddress" type="text" class="form-control" placeholder="Customer's Address">
+        </div>
+        <br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">City</span>
-                <input id="txtCity" type="text" class="form-control" placeholder="Customer's City">
-            </div><br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Address 2</span>
+            <input id="txtAddress2" type="text" class="form-control" placeholder="Customer's Address2">
+        </div>
+        <br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Country</span>
-                <input id="txtCountry" type="text" class="form-control" placeholder="Customer's Country">
-            </div><br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Zip</span>
+            <input id="txtZip" type="text" class="form-control" placeholder="Customer's Zip">
+        </div>
+        <br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Email</span>
-                <input id="txtEmail" type="text" class="form-control" placeholder="Customer's Email">
-            </div><br>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">City</span>
+            <input id="txtCity" type="text" class="form-control" placeholder="Customer's City">
+        </div>
+        <br>
 
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon">Phone</span>
-                <input id="txtPhone" type="text" class="form-control" placeholder="Customer's Phone">
-            </div><br>
-                                                          
-            <div>
-                <button id="btn1" class="btn btn-default" type="button">Save</button>
-            </div>
-            <p id="demo"></p>
-            <p id="demo1"></p>
-            <p id="demo2"></p>
-            <p id="demo3"></p>
-            <p id="demo4"></p>
-            <p id="demo5"></p>
-            <p id="demo6"></p>
-            <p id="demo7"></p>
-            <p id="demo8"></p>
-            
-        </main>
-        <footer>
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Country</span>
+            <input id="txtCountry" type="text" class="form-control" placeholder="Customer's Country">
+        </div>
+        <br>
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Email</span>
+            <input id="txtEmail" type="text" class="form-control" placeholder="Customer's Email">
+        </div>
+        <br>
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">Phone</span>
+            <input id="txtPhone" type="text" class="form-control" placeholder="Customer's Phone">
+        </div>
+        <br>
+
+        <div>
+            <button id="btn1" class="btn btn-default" type="button">Save</button>
+        </div>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6"></div>
             <table>
-                <tr>
-                    <th>Created by</th>
-                    <th>Contact us</th>
-                    <th>Follow us on</th>
-                </tr>
-                <tr>
-                    <td>Maddie</td>
-                    <td>Our email</td>
-                    <td>Facebook</td>
-                </tr>
-                <tr>
-                    <td>2018</td>
-                    <td>Our phone number</td>
-                    <td>Twitter</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Google plus</td>
-                </tr>
+                <tbody>
+                    <th id="id" class="text-left">Created by</td>
+                        <th id="name" class="text-left">Contact us</td>
+                            <th id="email" class="text-left">Follow us</td>
+                                <tr>
+                                    <td class="text-left">
+                                        <p>© 2018 CentiSoft webdesign</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <p>Email: info@centisoft.com</p>
+                                        <p>Phone: +45 11 22 334</p>
+                                    </td>
+                                    <td class="text-left">
+                                        <a href="https://facebook.com">Facebook</a>
+                                        <br>
+                                        <a href="https://twitter.com">Twitter</a>
+                                        <br>
+                                        <a href="https://plus.google.com">Google Plus</a>
+                                    </td>
+                                </tr>
+                </tbody>
             </table>
-        </footer>
-        <script src="jquery-3.3.1.js"></script>
-        <script>
-            $("#btn1").click(function() {
-                var name=$("#txtName").val();
-                var address=$("#txtAddress").val();
-                var address2=$("#txtAddress2").val();
-                var zip=$("#txtZip").val();
-                var city=$("#txtCity").val();
-                var country=$("#txtCountry").val();
-                var email=$("#txtEmail").val();
-                var phone=$("#txtPhone").val();
-                
-            $.post("http://www.centisoft.dk/api/Customer",{Name: name,Address: address, Address2: address2, Zip: zip, City: city, Country: country, Email: email, Phone: phone});
+        </div>
+    </footer>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $("#btn1").click(function () {
+            var name = $("#txtName").val();
+            var address = $("#txtAddress").val();
+            var address2 = $("#txtAddress2").val();
+            var zip = $("#txtZip").val();
+            var city = $("#txtCity").val();
+            var country = $("#txtCountry").val();
+            var email = $("#txtEmail").val();
+            var phone = $("#txtPhone").val();
+
+            $.post("http://www.centisoft.dk/api/Customer", { Name: name, Address: address, Address2: address2, Zip: zip, City: city, Country: country, Email: email, Phone: phone });
             alert("New customer was added.");
-                });        
-        </script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+        });        
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
